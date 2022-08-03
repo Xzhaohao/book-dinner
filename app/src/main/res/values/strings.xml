@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">订餐</string>
+
+    <string name="tabBar_home">首页</string>
+    <string name="tabBar_finances">理财</string>
+    <string name="tabBar_borrowMoney">借钱</string>
+    <string name="tabBar_mine">我的</string>
+
+    <!-- 启动页 -->
+    <string name="index_start">立即进入</string>
+    <string name="index_desc">全新产品 全新收益</string>
+    <string name="index_title">全新金融</string>
+
+    <!-- 首页 -->
+    <string name="home_max_limit">最高可领取额度（元）</string>
+    <string name="home_limit_price">300,000,000</string>
+    <string name="home_accrual">日利率0.02%起</string>
+    <string name="home_login_get">登录领取</string>
+    <string name="home_novice_gift">新手礼包</string>
+    <string name="home_hot_exercise">热门活动</string>
+    <string name="home_insurance">安全保障</string>
+    <string name="home_recommend">推荐有礼</string>
+    <string name="home_five_product">金融网产品第五期</string>
+    <string name="home_newcomer_exclusive">新人专享</string>
+    <string name="home_interest_rate">约定年化利率</string>
+    <string name="home_10percent">10%</string>
+    <string name="home_invest_start">起投金额</string>
+    <string name="home_invest_start_num">100.00</string>
+    <string name="home_invest_start_unit">元</string>
+    <string name="home_lending_term">出借期限</string>
+    <string name="home_lending_term_num">30</string>
+    <string name="home_lending_term_unit">天</string>
+    <string name="home_lending">立即出借</string>
+
+    <!-- 登录页 -->
+    <string name="login_login">登录</string>
+    <string name="login_register">注册</string>
+    <string name="login_mobile">请输入手机号码</string>
+    <string name="login_password">请输入密码</string>
+    <string name="login_forget">忘记密码？</string>
+
+    <!-- 借钱 -->
+    <string name="borrow_min_day_rate">最低日利率</string>
+    <string name="borrow_day_rate_num">0.02%</string>
+    <string name="borrow_received_time">到账时间</string>
+    <string name="borrow_received_time_num">30分钟</string>
+    <string name="borrow_query_limit">查询额度</string>
+
+    <!-- 我的 -->
+    <string name="mine_sign_in">签到</string>
+    <string name="mine_borrow_money">借款</string>
+    <string name="mine_card_roll">卡卷包</string>
+    <string name="mine_bank_card">银行卡</string>
+    <string name="mine_balance">可用余额</string>
+    <string name="mine_balance_num">63505.00元</string>
+    <string name="mine_setting">设置</string>
+    <string name="mine_nickname">白花恋诗</string>
+    <string name="mine_property">总资产（元）</string>
+    <string name="mine_property_num">****</string>
+    <string name="mine_income_yesterday">昨日收益</string>
+    <string name="mine_income_yesterday_num">354.61</string>
+    <string name="mine_income_count">累计收益</string>
+    <string name="mine_income_count_num">9800.00</string>
+    <string name="mine_recharge">充值</string>
+    <string name="mine_withdraw_cash">提现</string>
+    <string name="mine_income_log">收支记录</string>
+    <string name="mine_message">消息</string>
+    <string name="mine_contact">联系客服</string>
+
+    <!-- 理财 -->
+    <string name="finances_invite">邀请好友</string>
+    <string name="finances_gift">新人有礼</string>
+    <string name="finances_contact">客服咨询</string>
+    <string name="finances_choose">为您甄选王牌理财</string>
+    <string name="finances_90day">金融网90天</string>
+    <string name="finances_180day">金融网180天</string>
+    <string name="finances_180">180天</string>
+    <string name="finances_1k">1000元起购</string>
+    <string name="finances_43">4.30%</string>
+    <string name="finances_46">4.60%</string>
+    <string name="finances_49">4.90%</string>
+    <string name="finances_income">满期年化收益率</string>
+    <string name="finances_accrual">当日起息</string>
+    <string name="finances_regular">定期理财</string>
+
+    <!-- 签到 -->
+    <string name="sign_tip">连续签到7天可以活得大礼包哦</string>
+    <string name="sign_ranking">你是今日第6325名签到用户，获得了</string>
+    <string name="sign_gold">+10</string>
+    <string name="sign_in">已签到</string>
+
+    <!-- 我的消息 -->
+    <string name="message_title">我的消息</string>
+
+    <!-- 我的银行卡 -->
+    <string name="bank_card_list">我的银行卡</string>
+
+    <!-- 提现 -->
+    <string name="withdraw_deposit">提现</string>
+    <string name="withdraw_deposit_log">提现记录</string>
+    <string name="withdraw_tip">提现金额（两小时内到账）</string>
+    <string name="withdraw_count">可提现金额</string>
+    <string name="withdraw_all">全部提现</string>
+    <string name="withdraw_ok">确认提现</string>
+
+    <!-- 收支明细 -->
+    <string name="income">收支明细</string>
+    <string name="income_month">本月收入</string>
+    <string name="income_month_num">12000.00</string>
+    <string name="pay_month">本月支出</string>
+    <string name="pay_month_num">7000.00</string>
+    <string name="income_time">07/03</string>
+    <string name="income_week">周四</string>
+    <string name="income_unit1">收</string>
+    <string name="income_unit2">支</string>
+</resources>

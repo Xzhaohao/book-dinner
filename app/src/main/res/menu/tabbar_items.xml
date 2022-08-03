@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tabBar_home"
+        android:icon="@drawable/tabbar_item_home"
+        android:title="@string/tabBar_home" />
+
+    <item
+        android:id="@+id/tabBar_finances"
+        android:icon="@drawable/tabbar_item_finances"
+        android:title="@string/tabBar_finances" />
+
+    <item
+        android:id="@+id/tabBar_borrowMoney"
+        android:icon="@drawable/tabbar_item_borrowmoney"
+        android:title="@string/tabBar_borrowMoney" />
+
+    <item
+        android:id="@+id/tabBar_mine"
+        android:icon="@drawable/tabbar_item_mine"
+        android:title="@string/tabBar_mine" />
+</menu>
