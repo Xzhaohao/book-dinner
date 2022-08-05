@@ -7,13 +7,13 @@
 
     <item
         android:id="@+id/tabBar_finances"
-        android:icon="@drawable/tabbar_item_finances"
-        android:title="@string/tabBar_finances" />
+        android:icon="@drawable/tabbar_item_order"
+        android:title="@string/tabBar_order" />
 
     <item
         android:id="@+id/tabBar_borrowMoney"
-        android:icon="@drawable/tabbar_item_borrowmoney"
-        android:title="@string/tabBar_borrowMoney" />
+        android:icon="@drawable/tabbar_item_find"
+        android:title="@string/tabBar_find" />
 
     <item
         android:id="@+id/tabBar_mine"
