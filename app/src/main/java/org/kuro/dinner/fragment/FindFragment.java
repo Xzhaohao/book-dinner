@@ -1,43 +1,29 @@
 package org.kuro.dinner.fragment;
 
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-
-import androidx.fragment.app.Fragment;
-
 import org.kuro.dinner.R;
+import org.kuro.dinner.base.BaseFragment;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link FindFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class FindFragment extends Fragment {
-
+public class FindFragment extends BaseFragment {
 
     public FindFragment() {
-        // Required empty public constructor
     }
-
 
     public static FindFragment newInstance() {
-        FindFragment fragment = new FindFragment();
-        Bundle args = new Bundle();
-        fragment.setArguments(args);
-        return fragment;
+        return new FindFragment();
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected int initLayout() {
+        return R.layout.fragment_find;
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_order, container, false);
+    protected void initView() {
+
+    }
+
+    @Override
+    protected void initData() {
+
     }
 }

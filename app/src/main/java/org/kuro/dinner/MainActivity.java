@@ -1,16 +1,18 @@
 package org.kuro.dinner;
 
+import android.annotation.SuppressLint;
+import android.os.Bundle;
+import android.os.Handler;
+import android.view.KeyEvent;
+
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.annotation.SuppressLint;
-import android.os.Bundle;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import org.kuro.dinner.base.BaseUIActivity;
 import org.kuro.dinner.fragment.FindFragment;
 import org.kuro.dinner.fragment.HomeFragment;
 import org.kuro.dinner.fragment.MineFragment;
@@ -19,7 +21,7 @@ import org.kuro.dinner.fragment.OrderFragment;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseUIActivity {
 
     private List<Fragment> mFragments;
 
@@ -78,10 +80,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.tabBar_home:
                     setSelectedFragment(0);
                     break;
-                case R.id.tabBar_finances:
+                case R.id.tabBar_order:
                     setSelectedFragment(1);
                     break;
-                case R.id.tabBar_borrowMoney:
+                case R.id.tabBar_find:
                     setSelectedFragment(2);
                     break;
                 case R.id.tabBar_mine:
@@ -134,5 +136,34 @@ public class MainActivity extends AppCompatActivity {
         transaction.commit();
         // 更新要隐藏的fragment的位置
         lastPosition = position;
+    }
+
+
+    // 连续点击两次返回键退出当前应用
+    private boolean flag = true;
+    private static final int RESET_BACK = 1;
+    private final Handler handler = new Handler(message -> {
+        if (message.what == RESET_BACK) {
+            flag = true;
+        }
+        return true;
+    });
+
+    @Override
+    public boolean onKeyUp(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_BACK && flag) {
+            showToast("再点击一次，退出当前应用");
+            flag = false;
+            return handler.sendEmptyMessageDelayed(RESET_BACK, 2000);
+        }
+        return super.onKeyUp(keyCode, event);
+    }
+
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        // 为了防止内存泄漏，需要在onDestroy中移除所有未被执行的进程
+        handler.removeCallbacksAndMessages(null);
     }
 }

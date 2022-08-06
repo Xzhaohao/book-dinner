@@ -6,12 +6,12 @@
         android:title="@string/tabBar_home" />
 
     <item
-        android:id="@+id/tabBar_finances"
+        android:id="@+id/tabBar_order"
         android:icon="@drawable/tabbar_item_order"
         android:title="@string/tabBar_order" />
 
     <item
-        android:id="@+id/tabBar_borrowMoney"
+        android:id="@+id/tabBar_find"
         android:icon="@drawable/tabbar_item_find"
         android:title="@string/tabBar_find" />
 

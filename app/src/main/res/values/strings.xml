@@ -6,11 +6,6 @@
     <string name="tabBar_find">发现</string>
     <string name="tabBar_mine">我的</string>
 
-    <!-- 启动页 -->
-    <string name="index_start">立即进入</string>
-    <string name="index_desc">全新产品 全新收益</string>
-    <string name="index_title">全新金融</string>
-
     <!-- 首页 -->
     <string name="home_max_limit">最高可领取额度（元）</string>
     <string name="home_limit_price">300,000,000</string>
@@ -47,25 +42,19 @@
     <string name="borrow_query_limit">查询额度</string>
 
     <!-- 我的 -->
-    <string name="mine_sign_in">签到</string>
-    <string name="mine_borrow_money">借款</string>
-    <string name="mine_card_roll">卡卷包</string>
-    <string name="mine_bank_card">银行卡</string>
-    <string name="mine_balance">可用余额</string>
-    <string name="mine_balance_num">63505.00元</string>
-    <string name="mine_setting">设置</string>
     <string name="mine_nickname">白花恋诗</string>
-    <string name="mine_property">总资产（元）</string>
-    <string name="mine_property_num">****</string>
-    <string name="mine_income_yesterday">昨日收益</string>
-    <string name="mine_income_yesterday_num">354.61</string>
-    <string name="mine_income_count">累计收益</string>
-    <string name="mine_income_count_num">9800.00</string>
-    <string name="mine_recharge">充值</string>
-    <string name="mine_withdraw_cash">提现</string>
+    <string name="mine_collection">商品收藏</string>
+    <string name="mine_follow">店铺关注</string>
+    <string name="mine_cart">我的购物车</string>
+    <string name="mine_balance">我的余额</string>
+    <string name="mine_address">收货地址</string>
+    <string name="mine_foot">我的足迹</string>
+    <string name="mine_help">帮助中心</string>
+    <string name="mine_contact">联系客服</string>
+
     <string name="mine_income_log">收支记录</string>
     <string name="mine_message">消息</string>
-    <string name="mine_contact">联系客服</string>
+    <string name="mine_recharge">充值</string>
 
     <!-- 理财 -->
     <string name="finances_invite">邀请好友</string>
@@ -114,5 +103,4 @@
     <string name="income_unit1">收</string>
     <string name="income_unit2">支</string>
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
