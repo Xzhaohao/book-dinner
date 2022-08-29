@@ -29,10 +29,12 @@
 
     <!-- 登录页 -->
     <string name="login_login">登录</string>
-    <string name="login_register">注册</string>
-    <string name="login_mobile">请输入手机号码</string>
-    <string name="login_password">请输入密码</string>
-    <string name="login_forget">忘记密码？</string>
+    <string name="login_register">立即注册</string>
+    <string name="login_mobile">手机号</string>
+    <string name="login_password">密码</string>
+    <string name="login_forget">忘记密码</string>
+    <string name="login_wechat">微信登录</string>
+    <string name="login_qq">QQ登录</string>
 
     <!-- 借钱 -->
     <string name="borrow_min_day_rate">最低日利率</string>

@@ -14,19 +14,27 @@
         tools:targetApi="31">
 
         <!-- OPPO、VIVO 刘海屏适配 -->
-        <meta-data android:name="android.max_aspect" android:value="2.2" />
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.2" />
         <!-- 小米 刘海屏适配 -->
-        <meta-data android:name="notch.config" android:value="portrait|landscape" />
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
 
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- 登录页面 -->
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

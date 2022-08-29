@@ -41,6 +41,7 @@
 
     <color name="input_label">#646566</color>
     <color name="input_hint">#C8C9CC</color>
+    <color name="input_line">#EBEBEB</color>
     <color name="bottom_line">#EBEDF0</color>
     <color name="line">#E5E5E5</color>
 </resources>
