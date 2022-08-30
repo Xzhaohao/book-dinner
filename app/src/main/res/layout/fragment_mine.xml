@@ -5,11 +5,25 @@
     android:layout_height="match_parent"
     tools:context=".fragment.OrderFragment">
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/primary"
-        android:padding="40dp"
-        android:text="@string/tabBar_mine" />
+        android:layout_height="138dp"
+        android:background="@color/primary">
+
+        <ImageView
+            android:id="@+id/mine_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/mine_message"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/my_icon_setting" />
+
+        <ImageView
+            android:id="@+id/mine_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/icon_massage" />
+    </RelativeLayout>
 
 </LinearLayout>
