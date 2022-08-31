@@ -29,13 +29,13 @@ import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import org.kuro.financial.R;
-import org.kuro.financial.view.swipe.entity.BaseBannerInfo;
-import org.kuro.financial.view.swipe.holder.HolderCreator;
-import org.kuro.financial.view.swipe.holder.ViewHolder;
-import org.kuro.financial.view.swipe.listener.OnDoubleClickListener;
-import org.kuro.financial.view.swipe.transformers.BasePageTransformer;
-import org.kuro.financial.view.swipe.transformers.Transformer;
+import org.kuro.dinner.R;
+import org.kuro.dinner.view.swipe.entity.BaseBannerInfo;
+import org.kuro.dinner.view.swipe.holder.HolderCreator;
+import org.kuro.dinner.view.swipe.holder.ViewHolder;
+import org.kuro.dinner.view.swipe.listener.OnDoubleClickListener;
+import org.kuro.dinner.view.swipe.transformers.BasePageTransformer;
+import org.kuro.dinner.view.swipe.transformers.Transformer;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
