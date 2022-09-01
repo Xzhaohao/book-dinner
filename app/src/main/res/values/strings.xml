@@ -53,6 +53,7 @@
     <string name="mine_foot">我的足迹</string>
     <string name="mine_help">帮助中心</string>
     <string name="mine_contact">联系客服</string>
+    <string name="mine_new">NEW</string>
 
     <string name="mine_income_log">收支记录</string>
     <string name="mine_message">消息</string>

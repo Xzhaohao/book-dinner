@@ -44,4 +44,5 @@
     <color name="input_line">#EBEBEB</color>
     <color name="bottom_line">#EBEDF0</color>
     <color name="line">#E5E5E5</color>
+    <color name="mine_bg">#f7f7f7</color>
 </resources>

@@ -3,6 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="org.kuro.dinner">
 
+    <!-- 开启网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许访问网络状态的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 允许访问wifi状态的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
         android:allowBackup="false"
         android:dataExtractionRules="@xml/data_extraction_rules"

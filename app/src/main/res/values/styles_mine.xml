@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 下边线 -->
+    <style name="mine_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/line</item>
+    </style>
+
+    <!-- Mine 小菜单 -->
+    <style name="mine_menu_item" parent="main_menu_item">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- 选项列表右箭头 -->
+    <style name="mine_option_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:layout_gravity">center|end</item>
+        <item name="android:src">@mipmap/icon_left_arrow</item>
+    </style>
+
+    <!-- 选项列表 LinearLayout -->
+    <style name="mine_option_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingTop">13dp</item>
+        <item name="android:paddingBottom">13dp</item>
+        <item name="android:paddingStart">15dp</item>
+    </style>
+</resources>

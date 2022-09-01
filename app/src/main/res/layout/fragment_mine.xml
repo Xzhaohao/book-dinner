@@ -1,29 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/mine_bg"
+    android:orientation="vertical"
     tools:context=".fragment.OrderFragment">
 
+    <!-- 顶部黄色卡片 -->
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="138dp"
-        android:background="@color/primary">
+        android:layout_height="142dp"
+        android:background="@color/primary"
+        android:paddingTop="20dp">
 
-        <ImageView
-            android:id="@+id/mine_setting"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/mine_message"
-            android:layout_alignParentEnd="true"
-            android:src="@drawable/my_icon_setting" />
-
-        <ImageView
-            android:id="@+id/mine_message"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:src="@drawable/icon_massage" />
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp">
+
+            <ImageView
+                android:id="@+id/mine_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/my_icon_setting" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_massage" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center">
+
+            <org.kuro.dinner.view.avatar.Avatar
+                android:id="@+id/mine_avatar"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_marginEnd="10dp"
+                android:src="@mipmap/avatar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mine_nickname"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
     </RelativeLayout>
+    <!-- 顶部黄色卡片 end -->
+
+    <LinearLayout style="@style/mine_option_layout">
+
+        <TextView
+            style="@style/mine_menu_item"
+            android:text="@string/mine_collection"
+            app:drawableLeftCompat="@drawable/my_icon_collection" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:background="@drawable/mine_new_text"
+            android:gravity="center"
+            android:text="@string/mine_new"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+
+        <ImageView style="@style/mine_option_arrow" />
+    </LinearLayout>
+
+    <View style="@style/mine_line" />
+
+    <LinearLayout style="@style/mine_option_layout">
+
+        <TextView
+            style="@style/mine_menu_item"
+            android:text="@string/mine_follow"
+            app:drawableLeftCompat="@drawable/my_icon_follow" />
+
+        <ImageView style="@style/mine_option_arrow" />
+    </LinearLayout>
+
+    <View style="@style/mine_line" />
+
+    <LinearLayout style="@style/mine_option_layout">
+
+        <TextView
+            style="@style/mine_menu_item"
+            android:text="@string/mine_cart"
+            app:drawableLeftCompat="@drawable/my_icon_addtocart" />
+
+        <ImageView style="@style/mine_option_arrow" />
+    </LinearLayout>
+
+    <View style="@style/mine_line" />
+
+    <LinearLayout style="@style/mine_option_layout">
+
+        <TextView
+            style="@style/mine_menu_item"
+            android:text="@string/mine_balance"
+            app:drawableLeftCompat="@drawable/my_icon_balance" />
+
+        <ImageView style="@style/mine_option_arrow" />
+    </LinearLayout>
+
+    <View style="@style/mine_line" />
+
+    <LinearLayout style="@style/mine_option_layout">
+
+        <TextView
+            style="@style/mine_menu_item"
+            android:text="@string/mine_address"
+            app:drawableLeftCompat="@drawable/my_icon_address" />
+
+        <ImageView style="@style/mine_option_arrow" />
+    </LinearLayout>
+
+    <View style="@style/mine_line" />
+
+    <LinearLayout style="@style/mine_option_layout">
+
+        <TextView
+            style="@style/mine_menu_item"
+            android:text="@string/mine_foot"
+            app:drawableLeftCompat="@drawable/my_icon_foot" />
+
+        <ImageView style="@style/mine_option_arrow" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/mine_option_layout"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            style="@style/mine_menu_item"
+            android:text="@string/mine_help"
+            app:drawableLeftCompat="@drawable/my_icon_help" />
+
+        <ImageView style="@style/mine_option_arrow" />
+    </LinearLayout>
+
+    <View style="@style/mine_line" />
+
+    <LinearLayout style="@style/mine_option_layout">
+
+        <TextView
+            style="@style/mine_menu_item"
+            android:text="@string/mine_contact"
+            app:drawableLeftCompat="@drawable/my_icon_service" />
+
+        <ImageView style="@style/mine_option_arrow" />
+    </LinearLayout>
 
 </LinearLayout>
