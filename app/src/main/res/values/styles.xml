@@ -33,8 +33,16 @@
     <!-- ActionBar标题 -->
     <style name="action_bar_title">
         <item name="android:gravity">center</item>
-        <item name="android:textColor">@color/white</item>
+        <item name="android:textColor">@color/blackText3</item>
         <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- ActionBar返回图标 -->
+    <style name="action_bar_back">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:src">@mipmap/back_icon</item>
     </style>
 
     <!-- 小菜单 -->

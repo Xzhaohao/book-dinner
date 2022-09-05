@@ -5,3 +5,6 @@
 
 - 个人中心
 <img src="/doc/mine.jpg" width="30%" />
+
+- 我的余额
+<img src="/doc/balance.jpg" width="30%" />

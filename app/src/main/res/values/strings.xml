@@ -87,13 +87,15 @@
     <!-- 我的银行卡 -->
     <string name="bank_card_list">我的银行卡</string>
 
-    <!-- 提现 -->
-    <string name="withdraw_deposit">提现</string>
-    <string name="withdraw_deposit_log">提现记录</string>
-    <string name="withdraw_tip">提现金额（两小时内到账）</string>
-    <string name="withdraw_count">可提现金额</string>
-    <string name="withdraw_all">全部提现</string>
-    <string name="withdraw_ok">确认提现</string>
+    <!-- 我的余额 -->
+    <string name="balance">我的余额</string>
+    <string name="balance_detail">明细</string>
+    <string name="balance_use">可用余额（余额）</string>
+    <string name="balance_num">26.00</string>
+    <string name="balance_recharge">充值</string>
+    <string name="balance_withdraw">提现</string>
+    <string name="balance_bank">提现只能提现到银行卡</string>
+    <string name="bank_manage">银行卡管理</string>
 
     <!-- 收支明细 -->
     <string name="income">收支明细</string>

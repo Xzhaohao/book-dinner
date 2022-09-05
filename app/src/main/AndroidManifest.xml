@@ -2,12 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="org.kuro.dinner">
-
     <!-- 开启网络访问权限 -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!-- 允许访问网络状态的权限 -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <!-- 允许访问wifi状态的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 允许访问网络状态的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 允许访问wifi状态的权限 -->
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
@@ -23,8 +20,7 @@
         <!-- OPPO、VIVO 刘海屏适配 -->
         <meta-data
             android:name="android.max_aspect"
-            android:value="2.2" />
-        <!-- 小米 刘海屏适配 -->
+            android:value="2.2" /> <!-- 小米 刘海屏适配 -->
         <meta-data
             android:name="notch.config"
             android:value="portrait|landscape" />
@@ -34,13 +30,16 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- 登录页面 -->
+        </activity> <!-- 登录页面 -->
         <activity
             android:name=".ui.LoginActivity"
+            android:exported="false" />
+        <!-- 我的余额 -->
+        <activity
+            android:name=".ui.BalanceActivity"
             android:exported="false" />
     </application>
 
