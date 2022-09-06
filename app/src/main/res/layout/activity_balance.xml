@@ -63,7 +63,7 @@
             android:paddingBottom="40dp"
             android:text="@string/balance_num"
             android:textColor="@color/primary"
-            android:textSize="24sp" />
+            android:textSize="27sp" />
     </LinearLayout>
 
     <!--    <Button-->

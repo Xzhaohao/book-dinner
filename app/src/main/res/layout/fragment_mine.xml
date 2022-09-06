@@ -121,7 +121,9 @@
 
     <View style="@style/mine_line" />
 
-    <LinearLayout style="@style/mine_option_layout">
+    <LinearLayout
+        android:id="@+id/address_row"
+        style="@style/mine_option_layout">
 
         <TextView
             style="@style/mine_menu_item"

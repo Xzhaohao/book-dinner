@@ -84,8 +84,11 @@
     <!-- 我的消息 -->
     <string name="message_title">我的消息</string>
 
-    <!-- 我的银行卡 -->
-    <string name="bank_card_list">我的银行卡</string>
+    <!-- 收货地址 -->
+    <string name="address">我的收货地址</string>
+    <string name="edit">编辑</string>
+    <string name="delete">删除</string>
+    <string name="address_add">添加新地址</string>
 
     <!-- 我的余额 -->
     <string name="balance">我的余额</string>

@@ -36,10 +36,13 @@
         </activity> <!-- 登录页面 -->
         <activity
             android:name=".ui.LoginActivity"
-            android:exported="false" />
-        <!-- 我的余额 -->
+            android:exported="false" /> <!-- 我的余额 -->
         <activity
             android:name=".ui.BalanceActivity"
+            android:exported="false" />
+        <!-- 收货地址 -->
+        <activity
+            android:name=".ui.AddressActivity"
             android:exported="false" />
     </application>
 
