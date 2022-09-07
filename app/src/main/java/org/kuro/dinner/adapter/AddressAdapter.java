@@ -1,5 +1,6 @@
 package org.kuro.dinner.adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -33,6 +34,7 @@ public class AddressAdapter extends RecyclerView.Adapter<AddressAdapter.AddressV
         return new AddressViewHolder(view);
     }
 
+    @SuppressLint({"ResourceType", "UseCompatLoadingForColorStateLists"})
     @Override
     public void onBindViewHolder(@NonNull AddressViewHolder holder, int position) {
         Address address = addressList.get(position);
@@ -40,6 +42,7 @@ public class AddressAdapter extends RecyclerView.Adapter<AddressAdapter.AddressV
         holder.address_mobile.setText(address.getMobile());
         holder.address_name.setText(address.getAddress());
         holder.address_state.setChecked(address.getState());
+        holder.address_state.setTextColor(context.getResources().getColorStateList(R.drawable.radio_text_color));
         if (address.getState()) {
             holder.address_state.setText("默认地址");
         } else {

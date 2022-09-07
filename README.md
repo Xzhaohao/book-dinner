@@ -8,3 +8,6 @@
 
 - 我的余额
 <img src="/doc/balance.jpg" width="30%" />
+
+- 收货地址
+<img src="/doc/address.jpg" width="30%" />
