@@ -8,7 +8,7 @@
     tools:context=".ui.AddressActivity">
 
     <!-- 顶部标题栏 -->
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="74dp"
         android:background="@color/white"
@@ -21,15 +21,10 @@
 
         <TextView
             style="@style/action_bar_title"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:text="@string/address" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
-    </LinearLayout>
+    </RelativeLayout>
     <!-- 顶部标题栏 end -->
 
     <View

@@ -8,7 +8,7 @@
     tools:context=".ui.BalanceActivity">
 
     <!-- 顶部标题栏 -->
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="74dp"
         android:background="@color/white"
@@ -21,19 +21,19 @@
 
         <TextView
             style="@style/action_bar_title"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
             android:text="@string/balance" />
 
         <TextView
             style="@style/action_bar_title"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
             android:layout_marginEnd="15dp"
             android:text="@string/balance_detail"
             android:textSize="13sp" />
-    </LinearLayout>
+    </RelativeLayout>
     <!-- 顶部标题栏 end -->
 
     <View

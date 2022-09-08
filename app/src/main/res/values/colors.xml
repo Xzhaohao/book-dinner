@@ -34,7 +34,7 @@
     <color name="gray_7">#777777</color>
     <color name="gray_8">#888888</color>
 
-    <color name="tabBar_unselected">#bfbfbf</color>
+    <color name="tabBar_unselected">#BFBFBF</color>
 
     <color name="black_tag">#999999</color>
     <color name="gray_tag">#909399</color>
@@ -44,5 +44,5 @@
     <color name="input_line">#EBEBEB</color>
     <color name="bottom_line">#EBEDF0</color>
     <color name="line">#E5E5E5</color>
-    <color name="mine_bg">#f7f7f7</color>
+    <color name="mine_bg">#F7F7F7</color>
 </resources>
