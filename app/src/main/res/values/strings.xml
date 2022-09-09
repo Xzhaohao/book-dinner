@@ -77,11 +77,15 @@
     <string name="finances_accrual">当日起息</string>
     <string name="finances_regular">定期理财</string>
 
-    <!-- 签到 -->
-    <string name="sign_tip">连续签到7天可以活得大礼包哦</string>
-    <string name="sign_ranking">你是今日第6325名签到用户，获得了</string>
-    <string name="sign_gold">+10</string>
-    <string name="sign_in">已签到</string>
+    <!-- 支付 -->
+    <string name="pay">支付</string>
+    <string name="pay_count">付款金额</string>
+    <string name="pay_num">¥ 1000</string>
+    <string name="pay_type">选择支付方式</string>
+    <string name="pay_balance">余额支付</string>
+    <string name="pay_ali">支付宝支付</string>
+    <string name="pay_wechat">微信支付</string>
+    <string name="pay_submit">确认支付</string>
 
     <!-- 我的消息 -->
     <string name="message_title">我的消息</string>
@@ -106,8 +110,6 @@
     <string name="income">收支明细</string>
     <string name="income_month">本月收入</string>
     <string name="income_month_num">12000.00</string>
-    <string name="pay_month">本月支出</string>
-    <string name="pay_month_num">7000.00</string>
     <string name="income_time">07/03</string>
     <string name="income_week">周四</string>
     <string name="income_unit1">收</string>

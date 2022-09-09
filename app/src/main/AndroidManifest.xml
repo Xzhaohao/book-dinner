@@ -43,6 +43,10 @@
         <activity
             android:name=".ui.AddressActivity"
             android:exported="false" />
+        <!-- 支付 -->
+        <activity
+            android:name=".ui.PayActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

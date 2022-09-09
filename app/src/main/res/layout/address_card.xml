@@ -20,13 +20,9 @@
 
         <RadioButton
             android:id="@+id/address_state"
+            style="@style/radio_button"
             android:layout_width="wrap_content"
-            android:layout_height="28dp"
-            android:button="@null"
-            android:drawableStart="@drawable/radio_button_selector"
-            android:drawablePadding="5dp"
-            android:textColor="@color/blackText3"
-            android:textSize="13sp" />
+            android:layout_height="28dp" />
     </LinearLayout>
 
     <TextView

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mine_bg"
+    android:orientation="vertical"
+    tools:context=".ui.PayActivity">
+
+    <!-- 顶部标题栏 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:background="@color/white"
+        android:paddingTop="26dp">
+
+        <ImageView
+            android:id="@+id/address_back"
+            style="@style/action_bar_back"
+            android:contentDescription="@string/pay" />
+
+        <TextView
+            style="@style/action_bar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/pay" />
+    </RelativeLayout>
+    <!-- 顶部标题栏 end -->
+
+    <View
+        style="@style/mine_line"
+        android:background="#EEEEEE" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pay_count"
+            android:textColor="@color/black_tag"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/pay_num"
+            android:textColor="#FA4C42"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/pay_type" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/radio_button"
+                android:layout_width="35dp"
+                android:layout_marginStart="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@mipmap/safe_balance"
+                android:drawablePadding="6dp"
+                android:text="@string/pay_balance" />
+        </LinearLayout>
+
+        <View
+            style="@style/mine_line"
+            android:background="#EEEEEE" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/radio_button"
+                android:layout_width="35dp"
+                android:layout_marginStart="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@mipmap/safe_wechat"
+                android:drawablePadding="6dp"
+                android:text="@string/pay_balance" />
+        </LinearLayout>
+
+        <View
+            style="@style/mine_line"
+            android:background="#EEEEEE" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/radio_button"
+                android:layout_width="35dp"
+                android:layout_marginStart="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableStart="@mipmap/safe_alipay"
+                android:drawablePadding="6dp"
+                android:text="@string/pay_balance" />
+        </LinearLayout>
+
+        <View
+            style="@style/mine_line"
+            android:background="#EEEEEE" />
+    </RadioGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/pay_submit"
+        app:cornerRadius="3dp" />
+
+</LinearLayout>
