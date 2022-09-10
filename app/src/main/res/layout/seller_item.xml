@@ -29,19 +29,15 @@
 
                 <TextView
                     android:id="@+id/seller_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/blackText3"
+                    style="@style/home_card_text"
                     android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/seller_distance"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    style="@style/home_card_text"
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:textColor="#AAAAAA"
-                    android:textSize="12sp" />
+                    android:textColor="#AAAAAA" />
             </RelativeLayout>
 
             <LinearLayout
@@ -52,60 +48,32 @@
 
                 <ImageView
                     android:id="@+id/seller_star1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="3dp"
-                    android:src="@drawable/star_active" />
+                    style="@style/home_stars" />
 
                 <ImageView
                     android:id="@+id/seller_star2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="3dp"
-                    android:src="@drawable/star_active" />
+                    style="@style/home_stars" />
 
                 <ImageView
                     android:id="@+id/seller_star3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="3dp"
-                    android:src="@drawable/star_active" />
+                    style="@style/home_stars" />
 
                 <ImageView
                     android:id="@+id/seller_star4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="3dp"
-                    android:src="@drawable/star_active" />
+                    style="@style/home_stars" />
 
                 <ImageView
                     android:id="@+id/seller_star5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="3dp"
-                    android:src="@drawable/star_active" />
+                    style="@style/home_stars" />
 
                 <TextView
                     android:id="@+id/seller_score"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textColor="@color/blackText3"
-                    android:textSize="12sp" />
+                    style="@style/home_card_text" />
 
                 <TextView
                     android:id="@+id/seller_sales"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="10dp"
-                    android:textColor="@color/blackText3"
-                    android:textSize="12sp" />
+                    style="@style/home_card_text"
+                    android:layout_marginStart="10dp" />
             </LinearLayout>
 
             <LinearLayout
@@ -114,10 +82,8 @@
 
                 <TextView
                     android:id="@+id/seller_start_price"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/gray_6"
-                    android:textSize="12sp" />
+                    style="@style/home_card_text"
+                    android:textColor="@color/gray_6" />
 
                 <View
                     android:layout_width="1dp"
@@ -129,10 +95,8 @@
 
                 <TextView
                     android:id="@+id/seller_dispatching"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@color/gray_6"
-                    android:textSize="12sp" />
+                    style="@style/home_card_text"
+                    android:textColor="@color/gray_6" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
