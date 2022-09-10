@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text="麻辣小龙虾"
+            android:textColor="@color/blackText3"
+            android:textSize="12sp"
+            app:drawableLeftCompat="@mipmap/order_seller" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="13dp"
+            android:text="待接单"
+            android:textColor="@color/primary"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <View style="@style/mine_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="12dp"
+        android:paddingBottom="6dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginBottom="8dp"
+            android:text="金丝鸡柳"
+            android:textColor="@color/blackText3"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginBottom="8dp"
+            android:text="金丝鸡柳"
+            android:textColor="@color/blackText3"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginBottom="8dp"
+            android:text="金丝鸡柳"
+            android:textColor="@color/blackText3"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <View style="@style/mine_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="共 5 件 (含配送费8.00元)"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:text="¥65.50"
+            android:textColor="#fa4c42"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:gravity="end"
+            android:paddingBottom="12dp">
+
+
+            <org.kuro.dinner.view.button.RoundButton
+                style="@style/round_button"
+                android:text="取消订单"
+                app:borderColor="#c7c7c7"
+                app:radiusForBottomLeft="4dp"
+                app:radiusForBottomRight="4dp"
+                app:radiusForTopLeft="4dp"
+                app:radiusForTopRight="4dp"
+                app:textColorForPressed="@color/primary" />
+
+            <org.kuro.dinner.view.button.RoundButton
+                style="@style/round_button"
+                android:text="我要催单"
+                android:textColor="@color/primary"
+                app:borderColor="@color/primary"
+                app:radiusForBottomLeft="4dp"
+                app:radiusForBottomRight="4dp"
+                app:radiusForTopLeft="4dp"
+                app:radiusForTopRight="4dp"
+                app:textColorForPressed="@color/primary" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/mine_bg" />
+</LinearLayout>

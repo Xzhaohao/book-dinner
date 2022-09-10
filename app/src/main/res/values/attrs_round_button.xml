@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="RoundButtonStyle" format="reference" />
+
+    <declare-styleable name="RoundButton">
+        <attr name="bgColor" format="color" />
+        <attr name="borderColor" format="color" />
+
+        <attr name="textColorForPressed" format="color" />
+
+        <attr name="borderWidth" format="dimension" />
+
+        <attr name="isRadiusAutoHalf" format="boolean" />
+
+        <!--当前绘制的drawable的透明度-->
+        <attr name="alphaForDrawable" format="integer" />
+
+        <attr name="radius" format="dimension" />
+        <attr name="radiusForTopLeft" format="dimension" />
+        <attr name="radiusForTopRight" format="dimension" />
+        <attr name="radiusForBottomLeft" format="dimension" />
+        <attr name="radiusForBottomRight" format="dimension" />
+    </declare-styleable>
+</resources>
