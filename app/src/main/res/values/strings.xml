@@ -9,25 +9,23 @@
     <string name="toolbar_input_hint">请输入商家或商品名称</string>
 
     <!-- 首页 -->
-    <string name="home_max_limit">最高可领取额度（元）</string>
-    <string name="home_limit_price">300,000,000</string>
-    <string name="home_accrual">日利率0.02%起</string>
-    <string name="home_login_get">登录领取</string>
-    <string name="home_novice_gift">新手礼包</string>
-    <string name="home_hot_exercise">热门活动</string>
-    <string name="home_insurance">安全保障</string>
-    <string name="home_recommend">推荐有礼</string>
-    <string name="home_five_product">金融网产品第五期</string>
-    <string name="home_newcomer_exclusive">新人专享</string>
-    <string name="home_interest_rate">约定年化利率</string>
-    <string name="home_10percent">10%</string>
-    <string name="home_invest_start">起投金额</string>
-    <string name="home_invest_start_num">100.00</string>
-    <string name="home_invest_start_unit">元</string>
-    <string name="home_lending_term">出借期限</string>
-    <string name="home_lending_term_num">30</string>
-    <string name="home_lending_term_unit">天</string>
-    <string name="home_lending">立即出借</string>
+    <string name="home_food">美食</string>
+    <string name="home_chafing_dish">火锅</string>
+    <string name="home_fresh">生鲜</string>
+    <string name="home_garden_stuff">果蔬</string>
+    <string name="home_went">跑腿</string>
+    <string name="home_tea">下午茶</string>
+    <string name="home_pizza">披萨</string>
+    <string name="home_bread">面包</string>
+    <string name="home_chicken">炸鸡</string>
+    <string name="home_flowers">鲜花</string>
+    <string name="home_business">附近商家</string>
+    <string name="home_sort">综合排序</string>
+    <string name="home_nearby">附近最近</string>
+    <string name="home_sales">销量最高</string>
+    <string name="home_monthly_sales">月售</string>
+    <string name="home_dispatching">配送</string>
+    <string name="home_start_give">起送</string>
 
     <!-- 登录页 -->
     <string name="login_login">登录</string>
@@ -67,15 +65,6 @@
     <string name="finances_contact">客服咨询</string>
     <string name="finances_choose">为您甄选王牌理财</string>
     <string name="finances_90day">金融网90天</string>
-    <string name="finances_180day">金融网180天</string>
-    <string name="finances_180">180天</string>
-    <string name="finances_1k">1000元起购</string>
-    <string name="finances_43">4.30%</string>
-    <string name="finances_46">4.60%</string>
-    <string name="finances_49">4.90%</string>
-    <string name="finances_income">满期年化收益率</string>
-    <string name="finances_accrual">当日起息</string>
-    <string name="finances_regular">定期理财</string>
 
     <!-- 支付 -->
     <string name="pay">支付</string>
@@ -86,9 +75,6 @@
     <string name="pay_ali">支付宝支付</string>
     <string name="pay_wechat">微信支付</string>
     <string name="pay_submit">确认支付</string>
-
-    <!-- 我的消息 -->
-    <string name="message_title">我的消息</string>
 
     <!-- 收货地址 -->
     <string name="address">我的收货地址</string>
@@ -105,14 +91,5 @@
     <string name="balance_withdraw">提现</string>
     <string name="balance_bank">提现只能提现到银行卡</string>
     <string name="bank_manage">银行卡管理</string>
-
-    <!-- 收支明细 -->
-    <string name="income">收支明细</string>
-    <string name="income_month">本月收入</string>
-    <string name="income_month_num">12000.00</string>
-    <string name="income_time">07/03</string>
-    <string name="income_week">周四</string>
-    <string name="income_unit1">收</string>
-    <string name="income_unit2">支</string>
 
 </resources>

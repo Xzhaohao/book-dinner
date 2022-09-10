@@ -9,20 +9,9 @@
 
     <!-- 搜索框 -->
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
+        style="@style/search_input"
         android:layout_marginTop="2dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="8dp"
-        android:autofillHints="username"
-        android:background="@drawable/input_bg"
-        android:drawableStart="@drawable/nav_icon_search"
-        android:drawablePadding="8dp"
-        android:hint="@string/toolbar_input_hint"
-        android:inputType="text"
-        android:textColorHint="#9c9c9c"
-        android:textSize="14sp" />
+        android:autofillHints="username" />
     <!-- 搜索框 end -->
 
     <LinearLayout

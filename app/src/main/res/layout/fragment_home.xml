@@ -1,11 +1,145 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
     tools:context=".fragment.HomeFragment">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primary">
 
-</LinearLayout>
+            <!-- 搜索框 -->
+            <EditText
+                style="@style/search_input"
+                android:layout_marginTop="30dp"
+                android:autofillHints="username" />
+            <!-- 搜索框 end -->
+        </LinearLayout>
+
+        <!-- 轮播图 -->
+        <org.kuro.dinner.view.swipe.Swipe
+            android:id="@+id/swipe_home"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            app:AutoPlayTime="6000"
+            app:isAutoPlay="false"
+            app:isHandLoop="true"
+            app:isShowNumberIndicator="false"
+            app:pageChangeDuration="800"
+            app:pointsVisibility="false" />
+        <!-- 轮播图 end -->
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:columnCount="5"
+            android:orientation="horizontal"
+            android:rowCount="2">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/home_menu_item"
+                android:drawableTop="@mipmap/home_ico1"
+                android:text="@string/home_food" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/home_menu_item"
+                android:drawableTop="@mipmap/home_ico2"
+                android:text="@string/home_chafing_dish" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/home_menu_item"
+                android:drawableTop="@mipmap/home_ico3"
+                android:text="@string/home_fresh" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/home_menu_item"
+                android:drawableTop="@mipmap/home_ico4"
+                android:text="@string/home_garden_stuff" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/home_menu_item"
+                android:drawableTop="@mipmap/home_ico5"
+                android:text="@string/home_went" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/home_menu_item"
+                android:layout_marginTop="8dp"
+                android:drawableTop="@mipmap/home_ico6"
+                android:text="@string/home_tea" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/home_menu_item"
+                android:layout_marginTop="8dp"
+                android:drawableTop="@mipmap/home_ico7"
+                android:text="@string/home_pizza" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/home_menu_item"
+                android:layout_marginTop="8dp"
+                android:drawableTop="@mipmap/home_ico8"
+                android:text="@string/home_bread" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/home_menu_item"
+                android:layout_marginTop="8dp"
+                android:drawableTop="@mipmap/home_ico9"
+                android:text="@string/home_chicken" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/home_menu_item"
+                android:layout_marginTop="8dp"
+                android:drawableTop="@mipmap/home_ico10"
+                android:text="@string/home_flowers" />
+        </GridLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/home_business"
+            android:textColor="@color/blackText3"
+            android:textSize="21sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="12dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/home_sort_tabs"
+                android:drawableEnd="@drawable/fold_bottom"
+                android:drawablePadding="6dp"
+                android:text="@string/home_sort"
+                android:textColor="@color/primary" />
+
+            <TextView
+                style="@style/home_sort_tabs"
+                android:layout_marginStart="18dp"
+                android:text="@string/home_nearby" />
+
+            <TextView
+                style="@style/home_sort_tabs"
+                android:layout_marginStart="18dp"
+                android:text="@string/home_sales" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/home_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
