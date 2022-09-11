@@ -61,4 +61,10 @@ public class RoundButton extends AppCompatButton {
         }
         return true;
     }
+
+
+    @Override
+    public boolean callOnClick() {
+        return super.callOnClick();
+    }
 }

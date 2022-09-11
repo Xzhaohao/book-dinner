@@ -6,7 +6,7 @@ import java.util.List;
 public class Order {
 
     private String sellerName;
-    // 订单状态，1待接单，2待配送，3待收货，4待评价，5交易成功，6退款中
+    // 订单状态，1待接单，2待配送，3待收货，4待评价，5交易成功，6交易取消，7退款中
     private Integer state;
     private Integer foodNum;
     private String price;
@@ -104,7 +104,8 @@ public class Order {
         items3.add(new Food("金丝鸡柳", 3));
         items3.add(new Food("炸鸡汉堡", 1));
         items3.add(new Food("黑椒鸡块", 1));
-        list.add(new Order("金拱门", 1, 5, "¥65.50", items3));
+        list.add(new Order("金拱门", 6, 5, "¥65.50", items3));
+        list.add(new Order("金拱门", 4, 5, "¥65.50", items3));
 
         return list;
     }

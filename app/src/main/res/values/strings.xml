@@ -47,6 +47,14 @@
     <string name="order_assess">立即评价</string>
     <string name="order_refundment_detail">退款详情</string>
     <string name="order_refundment_cancel">取消退款</string>
+    <string name="order_tab1">全部\n(4)</string>
+    <string name="order_tab2">待接单\n(1)</string>
+    <string name="order_tab3">待配送\n(1)</string>
+    <string name="order_tab4">待收货\n(1)</string>
+    <string name="order_tab5">待评价\n(1)</string>
+    <string name="order_tab6">退款中\n(0)</string>
+    <string name="order_tab7">交易成功\n(0)</string>
+    <string name="order_tab8">交易取消\n(0)</string>
 
     <!-- 我的 -->
     <string name="mine_nickname">白花恋诗</string>
@@ -89,5 +97,15 @@
     <string name="balance_withdraw">提现</string>
     <string name="balance_bank">提现只能提现到银行卡</string>
     <string name="bank_manage">银行卡管理</string>
+
+    <string name="appraise">评价</string>
+    <string name="appraise_rider">骑手 李四</string>
+    <string name="appraise_time">2月25日10:45左右送达</string>
+    <string name="appraise_unsatisfaction">不满意</string>
+    <string name="appraise_satisfaction">满意</string>
+    <string name="appraise_seller">麻辣小龙虾（人民广场店）</string>
+    <string name="appraise_input">亲，请您对该店铺进行评价</string>
+    <string name="appraise_upload">上传图片</string>
+    <string name="appraise_submit">提交评价</string>
 
 </resources>

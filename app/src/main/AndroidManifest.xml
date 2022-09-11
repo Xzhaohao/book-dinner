@@ -42,10 +42,13 @@
             android:exported="false" /> <!-- 收货地址 -->
         <activity
             android:name=".ui.AddressActivity"
-            android:exported="false" />
-        <!-- 支付 -->
+            android:exported="false" /> <!-- 支付 -->
         <activity
             android:name=".ui.PayActivity"
+            android:exported="false" />
+        <!-- 评价 -->
+        <activity
+            android:name=".ui.AppraiseActivity"
             android:exported="false" />
     </application>
 

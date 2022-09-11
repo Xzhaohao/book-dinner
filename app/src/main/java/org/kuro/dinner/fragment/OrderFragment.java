@@ -10,6 +10,8 @@ import org.kuro.dinner.model.entity.Order;
 
 public class OrderFragment extends BaseFragment {
 
+    private RecyclerView orderRecycler;
+
     public OrderFragment() {
     }
 
@@ -24,16 +26,14 @@ public class OrderFragment extends BaseFragment {
 
     @Override
     protected void initView() {
-        RecyclerView orderRecycler = mRootView.findViewById(R.id.order_recycler);
-        LinearLayoutManager layoutManager = new LinearLayoutManager(requireContext());
-        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-
-        orderRecycler.setLayoutManager(layoutManager);
-        orderRecycler.setAdapter(new OrderAdapter(Order.getList(), requireContext()));
+        orderRecycler = mRootView.findViewById(R.id.order_recycler);
     }
 
     @Override
     protected void initData() {
-
+        LinearLayoutManager layoutManager = new LinearLayoutManager(requireContext());
+        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        orderRecycler.setLayoutManager(layoutManager);
+        orderRecycler.setAdapter(new OrderAdapter(Order.getList(), requireContext()));
     }
 }

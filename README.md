@@ -6,6 +6,9 @@
 - 登录页
 <img src="/doc/login.jpg" width="30%" />
 
+- 订单
+<img src="/doc/order.jpg" width="30%" />
+
 - 发现
 <img src="/doc/find.jpg" width="30%" />
 

@@ -94,4 +94,10 @@
         <item name="android:textSize">12sp</item>
         <item name="android:textColor">@color/blackText3</item>
     </style>
+
+    <!--ShapeableImageView 圆形图片 -->
+    <style name="circleStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>

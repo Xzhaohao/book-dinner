@@ -1,11 +1,14 @@
 package org.kuro.dinner.adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.ForegroundColorSpan;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
@@ -19,6 +22,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import org.kuro.dinner.R;
 import org.kuro.dinner.model.Dict;
 import org.kuro.dinner.model.entity.Order;
+import org.kuro.dinner.ui.AppraiseActivity;
 import org.kuro.dinner.view.button.RoundButton;
 
 import java.util.List;
@@ -40,6 +44,7 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
         return new OrderAdapter.OrderViewHolder(view);
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     public void onBindViewHolder(@NonNull OrderViewHolder holder, int position) {
         Order order = orderList.get(position);
@@ -91,6 +96,16 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
                 holder.btnDelete.setVisibility(View.VISIBLE);
                 holder.btnBuy.setVisibility(View.VISIBLE);
                 holder.btnAssess.setVisibility(View.VISIBLE);
+
+                // 前往评价页面
+                holder.btnAssess.setOnTouchListener((View v, MotionEvent event) -> {
+                    // 阻止手指离开时onTouch方法的继续执行
+                    if (event.getAction() == MotionEvent.ACTION_UP) {
+                        context.startActivity(new Intent(context, AppraiseActivity.class));
+                        return true;
+                    }
+                    return false;
+                });
                 break;
             case 5: // 交易成功
                 holder.btnDelete.setVisibility(View.VISIBLE);
