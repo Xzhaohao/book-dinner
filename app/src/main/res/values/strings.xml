@@ -36,12 +36,17 @@
     <string name="login_wechat">微信登录</string>
     <string name="login_qq">QQ登录</string>
 
-    <!-- 借钱 -->
-    <string name="borrow_min_day_rate">最低日利率</string>
-    <string name="borrow_day_rate_num">0.02%</string>
-    <string name="borrow_received_time">到账时间</string>
-    <string name="borrow_received_time_num">30分钟</string>
-    <string name="borrow_query_limit">查询额度</string>
+    <!-- 订单页 -->
+    <string name="order_cancel">取消订单</string>
+    <string name="order_reminder">我要催单</string>
+    <string name="order_refundment">申请退款</string>
+    <string name="order_logistics">查看物流</string>
+    <string name="order_take">确认收货</string>
+    <string name="order_delete">删除订单</string>
+    <string name="order_buy">再次购买</string>
+    <string name="order_assess">立即评价</string>
+    <string name="order_refundment_detail">退款详情</string>
+    <string name="order_refundment_cancel">取消退款</string>
 
     <!-- 我的 -->
     <string name="mine_nickname">白花恋诗</string>
@@ -58,13 +63,6 @@
     <string name="mine_income_log">收支记录</string>
     <string name="mine_message">消息</string>
     <string name="mine_recharge">充值</string>
-
-    <!-- 理财 -->
-    <string name="finances_invite">邀请好友</string>
-    <string name="finances_gift">新人有礼</string>
-    <string name="finances_contact">客服咨询</string>
-    <string name="finances_choose">为您甄选王牌理财</string>
-    <string name="finances_90day">金融网90天</string>
 
     <!-- 支付 -->
     <string name="pay">支付</string>

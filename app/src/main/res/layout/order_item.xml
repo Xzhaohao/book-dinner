@@ -3,6 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -12,23 +14,20 @@
         android:paddingBottom="10dp">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/order_seller"
+            style="@style/home_card_text"
             android:layout_marginStart="20dp"
             android:drawablePadding="8dp"
             android:gravity="center"
-            android:text="麻辣小龙虾"
-            android:textColor="@color/blackText3"
-            android:textSize="12sp"
             app:drawableLeftCompat="@mipmap/order_seller" />
 
         <TextView
+            android:id="@+id/order_state"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginEnd="13dp"
-            android:text="待接单"
             android:textColor="@color/primary"
             android:textSize="12sp" />
 
@@ -40,35 +39,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingTop="12dp"
-        android:paddingBottom="6dp">
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
 
-        <TextView
+        <ListView
+            android:id="@+id/order_foods"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="65dp"
-            android:layout_marginBottom="8dp"
-            android:text="金丝鸡柳"
-            android:textColor="@color/blackText3"
-            android:textSize="12sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="65dp"
-            android:layout_marginBottom="8dp"
-            android:text="金丝鸡柳"
-            android:textColor="@color/blackText3"
-            android:textSize="12sp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="65dp"
-            android:layout_marginBottom="8dp"
-            android:text="金丝鸡柳"
-            android:textColor="@color/blackText3"
-            android:textSize="12sp" />
+            android:layout_height="80dp"
+            android:divider="#00000000"
+            android:dividerHeight="5dp"
+            android:listSelector="@android:color/transparent" />
 
     </LinearLayout>
 
@@ -79,21 +59,21 @@
         android:layout_height="wrap_content">
 
         <TextView
+            android:id="@+id/order_food_num"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="12dp"
-            android:text="共 5 件 (含配送费8.00元)"
             android:textSize="12sp" />
 
         <TextView
+            android:id="@+id/order_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="16dp"
-            android:text="¥65.50"
-            android:textColor="#fa4c42"
+            android:textColor="#FA4C42"
             android:textSize="16sp" />
 
         <LinearLayout
@@ -105,9 +85,11 @@
 
 
             <org.kuro.dinner.view.button.RoundButton
+                android:id="@+id/btn_cancel"
                 style="@style/round_button"
-                android:text="取消订单"
-                app:borderColor="#c7c7c7"
+                android:text="@string/order_cancel"
+                android:visibility="gone"
+                app:borderColor="#C7C7C7"
                 app:radiusForBottomLeft="4dp"
                 app:radiusForBottomRight="4dp"
                 app:radiusForTopLeft="4dp"
@@ -115,9 +97,110 @@
                 app:textColorForPressed="@color/primary" />
 
             <org.kuro.dinner.view.button.RoundButton
+                android:id="@+id/btn_refundment"
                 style="@style/round_button"
-                android:text="我要催单"
+                android:text="@string/order_refundment"
+                android:visibility="gone"
+                app:borderColor="#C7C7C7"
+                app:radiusForBottomLeft="4dp"
+                app:radiusForBottomRight="4dp"
+                app:radiusForTopLeft="4dp"
+                app:radiusForTopRight="4dp"
+                app:textColorForPressed="@color/primary" />
+
+            <org.kuro.dinner.view.button.RoundButton
+                android:id="@+id/btn_logistics"
+                style="@style/round_button"
+                android:text="@string/order_logistics"
+                android:visibility="gone"
+                app:borderColor="#C7C7C7"
+                app:radiusForBottomLeft="4dp"
+                app:radiusForBottomRight="4dp"
+                app:radiusForTopLeft="4dp"
+                app:radiusForTopRight="4dp"
+                app:textColorForPressed="@color/primary" />
+
+            <org.kuro.dinner.view.button.RoundButton
+                android:id="@+id/btn_delete"
+                style="@style/round_button"
+                android:text="@string/order_delete"
+                android:visibility="gone"
+                app:borderColor="#C7C7C7"
+                app:radiusForBottomLeft="4dp"
+                app:radiusForBottomRight="4dp"
+                app:radiusForTopLeft="4dp"
+                app:radiusForTopRight="4dp"
+                app:textColorForPressed="@color/primary" />
+
+            <org.kuro.dinner.view.button.RoundButton
+                android:id="@+id/btn_buy"
+                style="@style/round_button"
+                android:text="@string/order_buy"
+                android:visibility="gone"
+                app:borderColor="#C7C7C7"
+                app:radiusForBottomLeft="4dp"
+                app:radiusForBottomRight="4dp"
+                app:radiusForTopLeft="4dp"
+                app:radiusForTopRight="4dp"
+                app:textColorForPressed="@color/primary" />
+
+            <org.kuro.dinner.view.button.RoundButton
+                android:id="@+id/btn_refundment_detail"
+                style="@style/round_button"
+                android:text="@string/order_refundment_detail"
+                android:visibility="gone"
+                app:borderColor="#C7C7C7"
+                app:radiusForBottomLeft="4dp"
+                app:radiusForBottomRight="4dp"
+                app:radiusForTopLeft="4dp"
+                app:radiusForTopRight="4dp"
+                app:textColorForPressed="@color/primary" />
+
+            <org.kuro.dinner.view.button.RoundButton
+                android:id="@+id/btn_reminder"
+                style="@style/round_button"
+                android:text="@string/order_reminder"
                 android:textColor="@color/primary"
+                android:visibility="gone"
+                app:borderColor="@color/primary"
+                app:radiusForBottomLeft="4dp"
+                app:radiusForBottomRight="4dp"
+                app:radiusForTopLeft="4dp"
+                app:radiusForTopRight="4dp"
+                app:textColorForPressed="@color/primary" />
+
+            <org.kuro.dinner.view.button.RoundButton
+                android:id="@+id/btn_take"
+                style="@style/round_button"
+                android:text="@string/order_take"
+                android:textColor="@color/primary"
+                android:visibility="gone"
+                app:borderColor="@color/primary"
+                app:radiusForBottomLeft="4dp"
+                app:radiusForBottomRight="4dp"
+                app:radiusForTopLeft="4dp"
+                app:radiusForTopRight="4dp"
+                app:textColorForPressed="@color/primary" />
+
+            <org.kuro.dinner.view.button.RoundButton
+                android:id="@+id/btn_assess"
+                style="@style/round_button"
+                android:text="@string/order_assess"
+                android:textColor="@color/primary"
+                android:visibility="gone"
+                app:borderColor="@color/primary"
+                app:radiusForBottomLeft="4dp"
+                app:radiusForBottomRight="4dp"
+                app:radiusForTopLeft="4dp"
+                app:radiusForTopRight="4dp"
+                app:textColorForPressed="@color/primary" />
+
+            <org.kuro.dinner.view.button.RoundButton
+                android:id="@+id/btn_refundment_cancel"
+                style="@style/round_button"
+                android:text="@string/order_refundment_cancel"
+                android:textColor="@color/primary"
+                android:visibility="gone"
                 app:borderColor="@color/primary"
                 app:radiusForBottomLeft="4dp"
                 app:radiusForBottomRight="4dp"
@@ -126,9 +209,4 @@
                 app:textColorForPressed="@color/primary" />
         </LinearLayout>
     </RelativeLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="5dp"
-        android:background="@color/mine_bg" />
 </LinearLayout>
