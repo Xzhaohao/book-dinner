@@ -6,6 +6,7 @@ import org.kuro.dinner.R;
 import org.kuro.dinner.base.BaseFragment;
 import org.kuro.dinner.ui.AddressActivity;
 import org.kuro.dinner.ui.BalanceActivity;
+import org.kuro.dinner.ui.CartActivity;
 import org.kuro.dinner.ui.PayActivity;
 
 public class MineFragment extends BaseFragment {
@@ -35,6 +36,9 @@ public class MineFragment extends BaseFragment {
         LinearLayout followRow = mRootView.findViewById(R.id.follow_row);
         followRow.setOnClickListener(v -> navigateTo(PayActivity.class));
 
+        // 前往购物车页面
+        LinearLayout cartRow = mRootView.findViewById(R.id.cart_row);
+        cartRow.setOnClickListener(v -> navigateTo(CartActivity.class));
     }
 
     @Override

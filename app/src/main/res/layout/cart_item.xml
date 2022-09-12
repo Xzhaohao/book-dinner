@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingStart="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            style="@style/radio_button"
+            android:layout_width="35dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/cart_seller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@mipmap/order_seller"
+            android:drawablePadding="9dp"
+            android:gravity="center"
+            android:textColor="@color/blackText3"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/cart_food_list"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:divider="#00000000"
+        android:dividerHeight="5dp" />
+
+    <View
+        style="@style/mine_line"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="6dp"
+        android:background="#EEEEEE" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="6dp">
+
+        <TextView
+            android:id="@+id/cart_total_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:textColor="#FB4C42"
+            android:textSize="18sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:text="@string/cart_settle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:backgroundTint="#CCCCCC"
+            android:text="@string/cart_settle"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

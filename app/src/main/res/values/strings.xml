@@ -98,6 +98,7 @@
     <string name="balance_bank">提现只能提现到银行卡</string>
     <string name="bank_manage">银行卡管理</string>
 
+    <!-- 评价 -->
     <string name="appraise">评价</string>
     <string name="appraise_rider">骑手 李四</string>
     <string name="appraise_time">2月25日10:45左右送达</string>
@@ -108,4 +109,8 @@
     <string name="appraise_upload">上传图片</string>
     <string name="appraise_submit">提交评价</string>
 
+    <!-- 购物车 -->
+    <string name="cart">购物车</string>
+    <string name="finish">完成</string>
+    <string name="cart_settle">去结算</string>
 </resources>

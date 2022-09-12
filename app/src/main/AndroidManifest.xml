@@ -45,10 +45,13 @@
             android:exported="false" /> <!-- 支付 -->
         <activity
             android:name=".ui.PayActivity"
-            android:exported="false" />
-        <!-- 评价 -->
+            android:exported="false" /> <!-- 评价 -->
         <activity
             android:name=".ui.AppraiseActivity"
+            android:exported="false" />
+        <!-- 购物车 -->
+        <activity
+            android:name=".ui.CartActivity"
             android:exported="false" />
     </application>
 
