@@ -23,3 +23,6 @@
 
 - 支付
 <img src="/doc/pay.jpg" width="30%" />
+
+- 评价
+<img src="/doc/appraise.jpg" width="30%" />
