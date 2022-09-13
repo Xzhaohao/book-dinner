@@ -2,6 +2,7 @@ package org.kuro.dinner.adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import org.kuro.dinner.R;
 import org.kuro.dinner.model.entity.Seller;
+import org.kuro.dinner.ui.RunActivity;
 
 import java.util.List;
 
@@ -44,6 +46,9 @@ public class SellerAdapter extends RecyclerView.Adapter<SellerAdapter.SellerView
         holder.sales.setText("月售 " + seller.getSales());
         holder.startPrice.setText("起送 ¥" + seller.getStartPrice());
         holder.dispatching.setText("配送 ¥" + seller.getDispatching());
+
+        holder.cover.setOnClickListener(v -> context.startActivity(new Intent(context, RunActivity.class)));
+        holder.title.setOnClickListener(v -> context.startActivity(new Intent(context, RunActivity.class)));
 
         // 封面
         switch (position % 3) {

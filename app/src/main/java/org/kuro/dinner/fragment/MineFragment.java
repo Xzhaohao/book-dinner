@@ -33,9 +33,6 @@ public class MineFragment extends BaseFragment {
         LinearLayout addressRow = mRootView.findViewById(R.id.address_row);
         addressRow.setOnClickListener(v -> navigateTo(AddressActivity.class));
 
-        LinearLayout followRow = mRootView.findViewById(R.id.follow_row);
-        followRow.setOnClickListener(v -> navigateTo(PayActivity.class));
-
         // 前往购物车页面
         LinearLayout cartRow = mRootView.findViewById(R.id.cart_row);
         cartRow.setOnClickListener(v -> navigateTo(CartActivity.class));

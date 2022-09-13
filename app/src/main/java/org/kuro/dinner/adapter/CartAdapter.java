@@ -2,6 +2,7 @@ package org.kuro.dinner.adapter;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,8 +15,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.button.MaterialButton;
+
 import org.kuro.dinner.R;
 import org.kuro.dinner.model.entity.Cart;
+import org.kuro.dinner.ui.PayActivity;
 
 import java.util.List;
 
@@ -63,6 +67,9 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
             price += Double.parseDouble(food.getPrice());
         }
         holder.totalPrice.setText("¥" + price);
+
+        // 点击结算前往支付页面
+        holder.goPay.setOnClickListener(v -> context.startActivity(new Intent(context, PayActivity.class)));
     }
 
     @Override
@@ -74,6 +81,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
         AppCompatTextView seller;
         ListView foodList;
         TextView totalPrice;
+        MaterialButton goPay;
 
         public CartViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -81,6 +89,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.CartViewHolder
             seller = itemView.findViewById(R.id.cart_seller);
             foodList = itemView.findViewById(R.id.cart_food_list);
             totalPrice = itemView.findViewById(R.id.cart_total_price);
+            goPay = itemView.findViewById(R.id.cart_pay);
         }
     }
 }

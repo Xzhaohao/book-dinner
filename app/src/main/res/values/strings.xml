@@ -75,7 +75,7 @@
     <!-- 支付 -->
     <string name="pay">支付</string>
     <string name="pay_count">付款金额</string>
-    <string name="pay_num">¥ 1000</string>
+    <string name="pay_num">¥ 96.50</string>
     <string name="pay_type">选择支付方式</string>
     <string name="pay_balance">余额支付</string>
     <string name="pay_ali">支付宝支付</string>
@@ -113,4 +113,21 @@
     <string name="cart">购物车</string>
     <string name="finish">完成</string>
     <string name="cart_settle">去结算</string>
+
+    <!-- 跑腿 -->
+    <string name="run">跑腿</string>
+    <string name="deliver_address">临沂市兰山区金雀山路与陶然路90号</string>
+    <string name="deliver_user">张若虚</string>
+    <string name="deliver_mobile">13823532943</string>
+    <string name="take_address">物品送到哪里去</string>
+    <string name="remark">备注</string>
+    <string name="remark_text">物品描述或送件要求</string>
+    <string name="goods_img">物品图片</string>
+    <string name="agree_agreement">同意并接受《外卖跑腿协议》</string>
+    <string name="recommend">推荐骑手</string>
+    <string name="random">如不选择，默认随机分配</string>
+    <string name="rider1">李白</string>
+    <string name="rider2">杜甫</string>
+    <string name="rider3">王羲之</string>
+    <string name="order_submit">提交订单</string>
 </resources>

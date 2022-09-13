@@ -48,10 +48,13 @@
             android:exported="false" /> <!-- 评价 -->
         <activity
             android:name=".ui.AppraiseActivity"
-            android:exported="false" />
-        <!-- 购物车 -->
+            android:exported="false" /> <!-- 购物车 -->
         <activity
             android:name=".ui.CartActivity"
+            android:exported="false" />
+        <!-- 跑腿 -->
+        <activity
+            android:name=".ui.RunActivity"
             android:exported="false" />
     </application>
 
