@@ -51,10 +51,13 @@
             android:exported="false" /> <!-- 购物车 -->
         <activity
             android:name=".ui.CartActivity"
-            android:exported="false" />
-        <!-- 跑腿 -->
+            android:exported="false" /> <!-- 跑腿 -->
         <activity
             android:name=".ui.RunActivity"
+            android:exported="false" />
+        <!-- 退款 -->
+        <activity
+            android:name=".ui.RefundmentActivity"
             android:exported="false" />
     </application>
 

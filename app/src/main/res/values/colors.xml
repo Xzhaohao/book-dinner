@@ -27,7 +27,7 @@
     <color name="blackText3">#333333</color>
     <color name="blackText2">#222222</color>
 
-    <color name="bgGray">#f2f2f2</color>
+    <color name="bgGray">#F2F2F2</color>
     <color name="mainGray">#F2F6F7</color>
     <color name="gray_5">#555555</color>
     <color name="gray_6">#666666</color>
@@ -45,4 +45,7 @@
     <color name="bottom_line">#EBEDF0</color>
     <color name="line">#E5E5E5</color>
     <color name="mine_bg">#F7F7F7</color>
+
+    <color name="nodeColor">#CCCCCC</color>
+    <color name="nodeLine">#C4C4C4</color>
 </resources>

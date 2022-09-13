@@ -130,4 +130,11 @@
     <string name="rider2">杜甫</string>
     <string name="rider3">王羲之</string>
     <string name="order_submit">提交订单</string>
+
+    <string name="seller_label">商家名称</string>
+    <string name="seller_name">蜜雪冰城</string>
+    <string name="order_label">订单号码</string>
+    <string name="order_no">3696812966490732</string>
+    <string name="back_money_label">退款金额</string>
+    <string name="back_path">退款流程</string>
 </resources>
