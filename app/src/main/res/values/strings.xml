@@ -131,10 +131,26 @@
     <string name="rider3">王羲之</string>
     <string name="order_submit">提交订单</string>
 
+    <!-- 退款详情 -->
     <string name="seller_label">商家名称</string>
     <string name="seller_name">蜜雪冰城</string>
     <string name="order_label">订单号码</string>
-    <string name="order_no">3696812966490732</string>
+    <string name="order_no">369681296649</string>
     <string name="back_money_label">退款金额</string>
     <string name="back_path">退款流程</string>
+
+    <!-- 订单详情 -->
+    <string name="order_detail">订单详情</string>
+    <string name="order_status">订单状态</string>
+    <string name="order_status_text">待评价</string>
+    <string name="order_label2">订单号</string>
+    <string name="copy_order_no">复制订单号</string>
+    <string name="leave_word">买家留言</string>
+    <string name="take_info">收货信息</string>
+    <string name="take_user">收货人</string>
+    <string name="rider_info">骑手信息</string>
+    <string name="rider_label">骑手</string>
+    <string name="mobile_label">电话</string>
+    <string name="order_create_time_label">下单时间</string>
+    <string name="order_create_time">2022&#8211;07&#8211;07 09:22:31</string>
 </resources>

@@ -23,6 +23,7 @@ import org.kuro.dinner.R;
 import org.kuro.dinner.model.Dict;
 import org.kuro.dinner.model.entity.Order;
 import org.kuro.dinner.ui.AppraiseActivity;
+import org.kuro.dinner.ui.OrderDetailActivity;
 import org.kuro.dinner.ui.RefundmentActivity;
 import org.kuro.dinner.view.button.RoundButton;
 
@@ -87,6 +88,14 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
             case 2: // 待配送
                 holder.btnCancel.setVisibility(View.VISIBLE);
                 holder.btnReminder.setVisibility(View.VISIBLE);
+
+                holder.btnCancel.setOnTouchListener((View v, MotionEvent event) -> {
+                    if (event.getAction() == MotionEvent.ACTION_UP) {
+                        context.startActivity(new Intent(context, OrderDetailActivity.class));
+                        return true;
+                    }
+                    return false;
+                });
                 break;
             case 3: // 待收货
                 holder.btnRefundment.setVisibility(View.VISIBLE);
